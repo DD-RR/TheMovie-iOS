@@ -14,7 +14,6 @@ protocol LoginStatus: AnyObject {
 final class LoginViewModel {
    var userLoginData: UserLoginData?
    var api: LoginAPI
-//   @ViewModelState var state: APIState?
     weak var delegate: LoginStatus?
     var loginStatus: Bool? {
         didSet {

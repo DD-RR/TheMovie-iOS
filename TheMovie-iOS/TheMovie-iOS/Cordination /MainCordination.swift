@@ -28,7 +28,7 @@ class MainCoordination: Coordination {
     }
     
     func filmCollection() {
-        <#code#>
+        rootViewController.pushViewController(viewControllerFactory.filmCollectionViewController(), animated: true)
     }
     
 }

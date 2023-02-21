@@ -23,6 +23,11 @@
 		AFD9B26A29A46BE200F4130E /* FilmCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26929A46BE200F4130E /* FilmCollectionModel.swift */; };
 		AFD9B26E29A46D5100F4130E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26D29A46D5100F4130E /* LoginViewModel.swift */; };
 		AFD9B27229A46E0F00F4130E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27129A46E0F00F4130E /* LoginViewController.swift */; };
+		AFD9B27429A471EF00F4130E /* APIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27329A471EF00F4130E /* APIState.swift */; };
+		AFD9B27629A4723E00F4130E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27529A4723E00F4130E /* APIError.swift */; };
+		AFD9B27929A4785C00F4130E /* FilmCollectionViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27829A4785C00F4130E /* FilmCollectionViewContoller.swift */; };
+		AFD9B27C29A539E100F4130E /* FilmCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27B29A539E000F4130E /* FilmCollectionCell.swift */; };
+		AFD9B27E29A53DEE00F4130E /* FilmCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27D29A53DEE00F4130E /* FilmCollectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		AFD9B26929A46BE200F4130E /* FilmCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionModel.swift; sourceTree = "<group>"; };
 		AFD9B26D29A46D5100F4130E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AFD9B27129A46E0F00F4130E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFD9B27329A471EF00F4130E /* APIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIState.swift; sourceTree = "<group>"; };
+		AFD9B27529A4723E00F4130E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		AFD9B27829A4785C00F4130E /* FilmCollectionViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewContoller.swift; sourceTree = "<group>"; };
+		AFD9B27B29A539E000F4130E /* FilmCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionCell.swift; sourceTree = "<group>"; };
+		AFD9B27D29A53DEE00F4130E /* FilmCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +86,11 @@
 		AFD9B23F29A4463200F4130E /* TheMovie-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AFD9B26729A46BA900F4130E /* FilmColectionModule */,
+				AFD9B27F29A53F1200F4130E /* Utilities */,
+				AFD9B25A29A44F4700F4130E /* Networking */,
 				AFD9B25629A44C9A00F4130E /* Cordination  */,
 				AFD9B25D29A4522B00F4130E /* LoginModule  */,
-				AFD9B25A29A44F4700F4130E /* Networking */,
+				AFD9B26729A46BA900F4130E /* FilmColectionModule */,
 				AFD9B24029A4463200F4130E /* AppDelegate.swift */,
 				AFD9B24229A4463200F4130E /* SceneDelegate.swift */,
 				AFD9B24429A4463200F4130E /* ViewController.swift */,
@@ -103,10 +114,12 @@
 		AFD9B25A29A44F4700F4130E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				AFD9B25B29A450E200F4130E /* LoginAPI.swift */,
 				AFD9B26129A45CD500F4130E /* Endpoint.swift */,
-				AFD9B26329A45DE500F4130E /* Credentials.swift */,
+				AFD9B27329A471EF00F4130E /* APIState.swift */,
+				AFD9B25B29A450E200F4130E /* LoginAPI.swift */,
 				AFD9B26529A463DC00F4130E /* FilmcollectionAPI.swift */,
+				AFD9B26329A45DE500F4130E /* Credentials.swift */,
+				AFD9B27529A4723E00F4130E /* APIError.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -133,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				AFD9B26829A46BB900F4130E /* FilmColectionModel */,
+				AFD9B27A29A478E200F4130E /* FilmCollectionView */,
+				AFD9B27729A4784700F4130E /* FilmCollectionViewModel */,
 			);
 			path = FilmColectionModule;
 			sourceTree = "<group>";
@@ -159,6 +174,38 @@
 				AFD9B27129A46E0F00F4130E /* LoginViewController.swift */,
 			);
 			name = LoginView;
+			sourceTree = "<group>";
+		};
+		AFD9B27729A4784700F4130E /* FilmCollectionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B27829A4785C00F4130E /* FilmCollectionViewContoller.swift */,
+				AFD9B27B29A539E000F4130E /* FilmCollectionCell.swift */,
+			);
+			path = FilmCollectionViewModel;
+			sourceTree = "<group>";
+		};
+		AFD9B27A29A478E200F4130E /* FilmCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B27D29A53DEE00F4130E /* FilmCollectionViewModel.swift */,
+			);
+			name = FilmCollectionView;
+			sourceTree = "<group>";
+		};
+		AFD9B27F29A53F1200F4130E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B28029A53F4100F4130E /* Extensions */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		AFD9B28029A53F4100F4130E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,13 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD9B27E29A53DEE00F4130E /* FilmCollectionViewModel.swift in Sources */,
 				AFD9B24529A4463200F4130E /* ViewController.swift in Sources */,
 				AFD9B26029A4550200F4130E /* LoginModel.swift in Sources */,
+				AFD9B27429A471EF00F4130E /* APIState.swift in Sources */,
 				AFD9B26229A45CD500F4130E /* Endpoint.swift in Sources */,
 				AFD9B26A29A46BE200F4130E /* FilmCollectionModel.swift in Sources */,
 				AFD9B26429A45DE500F4130E /* Credentials.swift in Sources */,
 				AFD9B26629A463DC00F4130E /* FilmcollectionAPI.swift in Sources */,
 				AFD9B24129A4463200F4130E /* AppDelegate.swift in Sources */,
+				AFD9B27929A4785C00F4130E /* FilmCollectionViewContoller.swift in Sources */,
+				AFD9B27629A4723E00F4130E /* APIError.swift in Sources */,
+				AFD9B27C29A539E100F4130E /* FilmCollectionCell.swift in Sources */,
 				AFD9B24329A4463200F4130E /* SceneDelegate.swift in Sources */,
 				AFD9B26E29A46D5100F4130E /* LoginViewModel.swift in Sources */,
 				AFD9B25529A44C9500F4130E /* MainCordination.swift in Sources */,
