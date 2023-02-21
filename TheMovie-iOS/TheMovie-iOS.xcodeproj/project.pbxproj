@@ -13,6 +13,16 @@
 		AFD9B24829A4463200F4130E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD9B24629A4463200F4130E /* Main.storyboard */; };
 		AFD9B24A29A4463400F4130E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD9B24929A4463400F4130E /* Assets.xcassets */; };
 		AFD9B24D29A4463400F4130E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD9B24B29A4463400F4130E /* LaunchScreen.storyboard */; };
+		AFD9B25529A44C9500F4130E /* MainCordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B25429A44C9500F4130E /* MainCordination.swift */; };
+		AFD9B25829A44E1800F4130E /* CordinationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B25729A44E1800F4130E /* CordinationFactory.swift */; };
+		AFD9B25C29A450E200F4130E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B25B29A450E200F4130E /* LoginAPI.swift */; };
+		AFD9B26029A4550200F4130E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B25F29A4550200F4130E /* LoginModel.swift */; };
+		AFD9B26229A45CD500F4130E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26129A45CD500F4130E /* Endpoint.swift */; };
+		AFD9B26429A45DE500F4130E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26329A45DE500F4130E /* Credentials.swift */; };
+		AFD9B26629A463DC00F4130E /* FilmcollectionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26529A463DC00F4130E /* FilmcollectionAPI.swift */; };
+		AFD9B26A29A46BE200F4130E /* FilmCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26929A46BE200F4130E /* FilmCollectionModel.swift */; };
+		AFD9B26E29A46D5100F4130E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B26D29A46D5100F4130E /* LoginViewModel.swift */; };
+		AFD9B27229A46E0F00F4130E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27129A46E0F00F4130E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		AFD9B24929A4463400F4130E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFD9B24C29A4463400F4130E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFD9B24E29A4463400F4130E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD9B25429A44C9500F4130E /* MainCordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCordination.swift; sourceTree = "<group>"; };
+		AFD9B25729A44E1800F4130E /* CordinationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CordinationFactory.swift; sourceTree = "<group>"; };
+		AFD9B25B29A450E200F4130E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		AFD9B25F29A4550200F4130E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AFD9B26129A45CD500F4130E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AFD9B26329A45DE500F4130E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		AFD9B26529A463DC00F4130E /* FilmcollectionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmcollectionAPI.swift; sourceTree = "<group>"; };
+		AFD9B26929A46BE200F4130E /* FilmCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionModel.swift; sourceTree = "<group>"; };
+		AFD9B26D29A46D5100F4130E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AFD9B27129A46E0F00F4130E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,10 @@
 		AFD9B23F29A4463200F4130E /* TheMovie-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9B26729A46BA900F4130E /* FilmColectionModule */,
+				AFD9B25629A44C9A00F4130E /* Cordination  */,
+				AFD9B25D29A4522B00F4130E /* LoginModule  */,
+				AFD9B25A29A44F4700F4130E /* Networking */,
 				AFD9B24029A4463200F4130E /* AppDelegate.swift */,
 				AFD9B24229A4463200F4130E /* SceneDelegate.swift */,
 				AFD9B24429A4463200F4130E /* ViewController.swift */,
@@ -65,6 +89,76 @@
 				AFD9B24E29A4463400F4130E /* Info.plist */,
 			);
 			path = "TheMovie-iOS";
+			sourceTree = "<group>";
+		};
+		AFD9B25629A44C9A00F4130E /* Cordination  */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B25729A44E1800F4130E /* CordinationFactory.swift */,
+				AFD9B25429A44C9500F4130E /* MainCordination.swift */,
+			);
+			path = "Cordination ";
+			sourceTree = "<group>";
+		};
+		AFD9B25A29A44F4700F4130E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B25B29A450E200F4130E /* LoginAPI.swift */,
+				AFD9B26129A45CD500F4130E /* Endpoint.swift */,
+				AFD9B26329A45DE500F4130E /* Credentials.swift */,
+				AFD9B26529A463DC00F4130E /* FilmcollectionAPI.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		AFD9B25D29A4522B00F4130E /* LoginModule  */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B26C29A46D2D00F4130E /* LoginView */,
+				AFD9B26B29A46D1B00F4130E /* LoginViewModel */,
+				AFD9B25E29A454DE00F4130E /* LoginModel */,
+			);
+			name = "LoginModule ";
+			sourceTree = "<group>";
+		};
+		AFD9B25E29A454DE00F4130E /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B25F29A4550200F4130E /* LoginModel.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		AFD9B26729A46BA900F4130E /* FilmColectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B26829A46BB900F4130E /* FilmColectionModel */,
+			);
+			path = FilmColectionModule;
+			sourceTree = "<group>";
+		};
+		AFD9B26829A46BB900F4130E /* FilmColectionModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B26929A46BE200F4130E /* FilmCollectionModel.swift */,
+			);
+			name = FilmColectionModel;
+			sourceTree = "<group>";
+		};
+		AFD9B26B29A46D1B00F4130E /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B26D29A46D5100F4130E /* LoginViewModel.swift */,
+			);
+			name = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		AFD9B26C29A46D2D00F4130E /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B27129A46E0F00F4130E /* LoginViewController.swift */,
+			);
+			name = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +233,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD9B24529A4463200F4130E /* ViewController.swift in Sources */,
+				AFD9B26029A4550200F4130E /* LoginModel.swift in Sources */,
+				AFD9B26229A45CD500F4130E /* Endpoint.swift in Sources */,
+				AFD9B26A29A46BE200F4130E /* FilmCollectionModel.swift in Sources */,
+				AFD9B26429A45DE500F4130E /* Credentials.swift in Sources */,
+				AFD9B26629A463DC00F4130E /* FilmcollectionAPI.swift in Sources */,
 				AFD9B24129A4463200F4130E /* AppDelegate.swift in Sources */,
 				AFD9B24329A4463200F4130E /* SceneDelegate.swift in Sources */,
+				AFD9B26E29A46D5100F4130E /* LoginViewModel.swift in Sources */,
+				AFD9B25529A44C9500F4130E /* MainCordination.swift in Sources */,
+				AFD9B25C29A450E200F4130E /* LoginAPI.swift in Sources */,
+				AFD9B27229A46E0F00F4130E /* LoginViewController.swift in Sources */,
+				AFD9B25829A44E1800F4130E /* CordinationFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +399,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +428,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
