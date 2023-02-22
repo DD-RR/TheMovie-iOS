@@ -12,6 +12,7 @@ protocol Coordination {
     var rootViewController: UINavigationController { get set }
     func start ()
     func filmCollection()
+    func profile()
 }
 
 class MainCoordination: Coordination {
@@ -31,4 +32,7 @@ class MainCoordination: Coordination {
         rootViewController.pushViewController(viewControllerFactory.filmCollectionViewController(), animated: true)
     }
     
+    func profile() {
+        rootViewController.pushViewController(viewControllerFactory.profileViewController(), animated: true)
+    }
 }

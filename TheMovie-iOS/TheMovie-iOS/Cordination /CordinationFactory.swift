@@ -8,25 +8,32 @@
 import UIKit
 
 protocol ViewControllerFactory {
-   func loginViewController() -> UIViewController
-   func filmCollectionViewController() -> UIViewController
+    func loginViewController() -> UIViewController
+    func filmCollectionViewController() -> UIViewController
+    func profileViewController() -> UIViewController
 }
 
 class CoordinationFactory: ViewControllerFactory {
     
     func loginViewController() -> UIViewController {
-       let loginAPI: LoginAPI = LoginAPI(session: .shared)
-       let loginViewController: LoginViewController = LoginViewController()
-       let viewModel: LoginViewModel = LoginViewModel(api: loginAPI)
-       loginViewController.viewModel = viewModel
-       return loginViewController
+        let loginAPI: LoginAPI = LoginAPI(session: .shared)
+        let loginViewController: LoginViewController = LoginViewController()
+        let viewModel: LoginViewModel = LoginViewModel(api: loginAPI)
+        loginViewController.viewModel = viewModel
+        return loginViewController
     }
     
     func filmCollectionViewController() -> UIViewController {
-       let filmCollectionAPI: FilmCollectionAPI = FilmCollectionAPI(session: .shared)
-       let filmCollectionViewController: FilmCollectionViewController = FilmCollectionViewController()
-       let viewModel: FilmCollectionViewModel = FilmCollectionViewModel(api: filmCollectionAPI)
-       filmCollectionViewController.viewModel = viewModel
-       return filmCollectionViewController
+        let filmCollectionAPI: FilmCollectionAPI = FilmCollectionAPI(session: .shared)
+        let filmCollectionViewController: FilmCollectionViewController = FilmCollectionViewController()
+        let viewModel: FilmCollectionViewModel = FilmCollectionViewModel(api: filmCollectionAPI)
+        filmCollectionViewController.viewModel = viewModel
+        return filmCollectionViewController
+    }
+    
+    func profileViewController() -> UIViewController {
+        let profileAPI: ProfileAPI = ProfileAPI(session: .shared)
+        let profileViewController: ProfileViewController = ProfileViewController()
+        return profileViewController
     }
 }

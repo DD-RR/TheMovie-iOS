@@ -28,6 +28,14 @@
 		AFD9B27929A4785C00F4130E /* FilmCollectionViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27829A4785C00F4130E /* FilmCollectionViewContoller.swift */; };
 		AFD9B27C29A539E100F4130E /* FilmCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27B29A539E000F4130E /* FilmCollectionCell.swift */; };
 		AFD9B27E29A53DEE00F4130E /* FilmCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B27D29A53DEE00F4130E /* FilmCollectionViewModel.swift */; };
+		AFD9B28229A54C3900F4130E /* BlurLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B28129A54C3900F4130E /* BlurLoader.swift */; };
+		AFD9B28429A54DBA00F4130E /* ViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B28329A54DBA00F4130E /* ViewModelState.swift */; };
+		AFD9B28629A54EAE00F4130E /* UsesLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B28529A54EAE00F4130E /* UsesLayout.swift */; };
+		AFD9B28829A54FC000F4130E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B28729A54FC000F4130E /* Extensions.swift */; };
+		AFD9B29029A5A08100F4130E /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B28F29A5A08100F4130E /* ProfileModel.swift */; };
+		AFD9B29229A5B56200F4130E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B29129A5B56200F4130E /* ProfileViewController.swift */; };
+		AFD9B29429A5C3E800F4130E /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B29329A5C3E800F4130E /* ProfileAPI.swift */; };
+		AFD9B29629A5C93500F4130E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD9B29529A5C93500F4130E /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		AFD9B27829A4785C00F4130E /* FilmCollectionViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewContoller.swift; sourceTree = "<group>"; };
 		AFD9B27B29A539E000F4130E /* FilmCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionCell.swift; sourceTree = "<group>"; };
 		AFD9B27D29A53DEE00F4130E /* FilmCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewModel.swift; sourceTree = "<group>"; };
+		AFD9B28129A54C3900F4130E /* BlurLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurLoader.swift; sourceTree = "<group>"; };
+		AFD9B28329A54DBA00F4130E /* ViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelState.swift; sourceTree = "<group>"; };
+		AFD9B28529A54EAE00F4130E /* UsesLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsesLayout.swift; sourceTree = "<group>"; };
+		AFD9B28729A54FC000F4130E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AFD9B28F29A5A08100F4130E /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		AFD9B29129A5B56200F4130E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AFD9B29329A5C3E800F4130E /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
+		AFD9B29529A5C93500F4130E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +107,7 @@
 				AFD9B25629A44C9A00F4130E /* Cordination  */,
 				AFD9B25D29A4522B00F4130E /* LoginModule  */,
 				AFD9B26729A46BA900F4130E /* FilmColectionModule */,
+				AFD9B28929A59FB500F4130E /* ProfileModule */,
 				AFD9B24029A4463200F4130E /* AppDelegate.swift */,
 				AFD9B24229A4463200F4130E /* SceneDelegate.swift */,
 				AFD9B24429A4463200F4130E /* ViewController.swift */,
@@ -120,6 +137,7 @@
 				AFD9B26529A463DC00F4130E /* FilmcollectionAPI.swift */,
 				AFD9B26329A45DE500F4130E /* Credentials.swift */,
 				AFD9B27529A4723E00F4130E /* APIError.swift */,
+				AFD9B29329A5C3E800F4130E /* ProfileAPI.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -197,6 +215,9 @@
 			isa = PBXGroup;
 			children = (
 				AFD9B28029A53F4100F4130E /* Extensions */,
+				AFD9B28129A54C3900F4130E /* BlurLoader.swift */,
+				AFD9B28329A54DBA00F4130E /* ViewModelState.swift */,
+				AFD9B28529A54EAE00F4130E /* UsesLayout.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -204,8 +225,43 @@
 		AFD9B28029A53F4100F4130E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AFD9B28729A54FC000F4130E /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AFD9B28929A59FB500F4130E /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B28A29A59FCA00F4130E /* ProfileModel */,
+				AFD9B28B29A59FD400F4130E /* ProfileView */,
+				AFD9B28C29A59FE400F4130E /* ProfileViewModel */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		AFD9B28A29A59FCA00F4130E /* ProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B28F29A5A08100F4130E /* ProfileModel.swift */,
+			);
+			name = ProfileModel;
+			sourceTree = "<group>";
+		};
+		AFD9B28B29A59FD400F4130E /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B29529A5C93500F4130E /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		AFD9B28C29A59FE400F4130E /* ProfileViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFD9B29129A5B56200F4130E /* ProfileViewController.swift */,
+			);
+			name = ProfileViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,22 +335,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFD9B28429A54DBA00F4130E /* ViewModelState.swift in Sources */,
 				AFD9B27E29A53DEE00F4130E /* FilmCollectionViewModel.swift in Sources */,
 				AFD9B24529A4463200F4130E /* ViewController.swift in Sources */,
 				AFD9B26029A4550200F4130E /* LoginModel.swift in Sources */,
 				AFD9B27429A471EF00F4130E /* APIState.swift in Sources */,
 				AFD9B26229A45CD500F4130E /* Endpoint.swift in Sources */,
 				AFD9B26A29A46BE200F4130E /* FilmCollectionModel.swift in Sources */,
+				AFD9B29429A5C3E800F4130E /* ProfileAPI.swift in Sources */,
 				AFD9B26429A45DE500F4130E /* Credentials.swift in Sources */,
 				AFD9B26629A463DC00F4130E /* FilmcollectionAPI.swift in Sources */,
+				AFD9B29629A5C93500F4130E /* ProfileViewModel.swift in Sources */,
+				AFD9B28829A54FC000F4130E /* Extensions.swift in Sources */,
 				AFD9B24129A4463200F4130E /* AppDelegate.swift in Sources */,
 				AFD9B27929A4785C00F4130E /* FilmCollectionViewContoller.swift in Sources */,
 				AFD9B27629A4723E00F4130E /* APIError.swift in Sources */,
 				AFD9B27C29A539E100F4130E /* FilmCollectionCell.swift in Sources */,
 				AFD9B24329A4463200F4130E /* SceneDelegate.swift in Sources */,
+				AFD9B29029A5A08100F4130E /* ProfileModel.swift in Sources */,
+				AFD9B28629A54EAE00F4130E /* UsesLayout.swift in Sources */,
 				AFD9B26E29A46D5100F4130E /* LoginViewModel.swift in Sources */,
 				AFD9B25529A44C9500F4130E /* MainCordination.swift in Sources */,
+				AFD9B28229A54C3900F4130E /* BlurLoader.swift in Sources */,
 				AFD9B25C29A450E200F4130E /* LoginAPI.swift in Sources */,
+				AFD9B29229A5B56200F4130E /* ProfileViewController.swift in Sources */,
 				AFD9B27229A46E0F00F4130E /* LoginViewController.swift in Sources */,
 				AFD9B25829A44E1800F4130E /* CordinationFactory.swift in Sources */,
 			);

@@ -8,23 +8,24 @@
 import Foundation
 
 struct LoginResponse: Codable {
-    let success: Bool
-    let expiresAt: String?
-    let token: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case success = "success"
-        case expireAt = "expires_at"
-        case token = "request_token"
-    }
+   let success: Bool
+   let expiresAt: String?
+   let token: String?
+   
+   enum CodingKeys: String, CodingKey {
+      case success = "success"
+      case expiresAt = "expires_at"
+      case token = "request_token"
+   }
+   
 }
 
 struct UserLoginData {
-    var username: String? = nil
-    var password: String? = nil
+   var username: String? = nil
+   var password: String? = nil
 }
 
 enum TextFieldTag: Int {
-    case username = 0
-    case password = 1
+   case username = 0
+   case password = 1
 }

@@ -1,21 +1,16 @@
 //
-//  FilmcollectionAPI.swift
+//  ProfileAPI.swift
 //  TheMovie-iOS
 //
-//  Created by Diego David Rodríguez Reyna on 20/02/23.
+//  Created by Diego David Rodríguez Reyna on 21/02/23.
 //
 
 import Foundation
 
-enum HTTPMethod: String {
-    case GET
-    case POST
-}
-
-struct FilmCollectionAPI {
+struct ProfileAPI {
     let session: URLSession
     
-    func load(_ endpoint: Endpoint, completion: @escaping (Result<FilmCollectionService, Error>) -> ()) {
+    func load(_ endpoint: Endpoint, completion: @escaping (Result<ProfileResults, Error>) -> ()) {
         var request = endpoint.request
         
         request.httpMethod = HTTPMethod.GET.rawValue
@@ -33,8 +28,8 @@ struct FilmCollectionAPI {
             }
             
             do {
-                let filmCollection: FilmCollectionService = try JSONDecoder().decode(FilmCollectionService.self, from: data)
-                completion(.success(filmCollection))
+                let profile: ProfileResults = try JSONDecoder().decode(ProfileResults.self, from: data)
+                completion(.success(profile))
                 
             } catch {
                 completion(.failure(APIError.parsingData))

@@ -60,11 +60,15 @@ final class FilmCollectionViewController: UIViewController {
       navigationController?.navigationBar.standardAppearance = appearance
       navigationController?.navigationBar.compactAppearance = appearance
       navigationController?.navigationBar.scrollEdgeAppearance = appearance
-      self.title = "TV Shows"
+      self.title = "Movies"
    }
    
    @objc private func goToProfile() {
       print("Profile")
+       DispatchQueue.main.async { [weak self] in
+           let coordinator: Coordination = MainCoordination(rootViewController: self?.navigationController ?? UINavigationController(), viewControllerFactory: CoordinationFactory())
+           coordinator.profile()
+       }
    }
    
    private func setupCollectionView() {

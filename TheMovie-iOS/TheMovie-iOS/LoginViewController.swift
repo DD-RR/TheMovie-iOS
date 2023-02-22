@@ -47,7 +47,7 @@ final class LoginViewController: UIViewController {
     
     private func loadBackground() {
        @UsesLayout var loginBackground: UIImageView = UIImageView()
-       loginBackground.image = UIImage(named: "movieBG")
+       loginBackground.image = UIImage(named: "MovieBack")
        view.addSubview(loginBackground)
        NSLayoutConstraint.activate([
           loginBackground.topAnchor.constraint(equalTo: view.topAnchor),
@@ -75,8 +75,8 @@ final class LoginViewController: UIViewController {
        view.addSubview(loginButton)
        setCommonAnchorsTo(loginButton)
        loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20).isActive = true
-       loginButton.backgroundColor = .lightGray
-       loginButton.setTitle("Log in", for: .normal)
+        loginButton.backgroundColor = .darkGray
+       loginButton.setTitle("Acceso", for: .normal)
        loginButton.addTarget(self, action: #selector(willSendLoginData), for: .touchUpInside)
     }
     private func setupErrorMessage() {
@@ -197,20 +197,19 @@ final class LoginViewController: UIViewController {
     
  }
 
- extension LoginViewController: LoginStatus {
-     func successful() {
-         DispatchQueue.main.async { [weak self] in
-             let coordinator: Coordinator = MainCoordinator(rootViewController: self?.navigationController ?? UINavigationController(), viewControllerFactory: iOSCoordinatorFactory())
-             coordinator.goToFilmCollection()
-         }
-         
-     }
-     
-     func denied() {
-         DispatchQueue.main.async { [weak self] in
-             self?.errorMessage.text = self?.viewModel?.errorMessage ?? ""
-             self?.errorMessage.isHidden = false
-         }
-     }
- }
-
+extension LoginViewController: LoginStatus {
+    func successful() {
+        DispatchQueue.main.async { [weak self] in
+            let coordinator: Coordination = MainCoordination(rootViewController: self?.navigationController ?? UINavigationController(), viewControllerFactory: CoordinationFactory())
+            coordinator.filmCollection()
+        }
+        
+    }
+    
+    func denied() {
+        DispatchQueue.main.async { [weak self] in
+            self?.errorMessage.text = self?.viewModel?.errorMessage ?? ""
+            self?.errorMessage.isHidden = false
+        }
+    }
+}
