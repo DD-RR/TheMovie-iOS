@@ -10,6 +10,7 @@ import UIKit
 final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        // viewModel?.requestProfiles() El error lo marca aca
     }
     
     override func viewWillAppear(_ animated: Bool) {
