@@ -9,5 +9,5 @@ import Foundation
 
 enum Credentials {
     static let apiKey: String = "cc4ecf7605fa497ac9e08b11edab21e2"
-    static let requestToken: String = "5e682b3867f358539e45323aee44a0492af22dbb"
+    static let requestToken: String = "42d913ac01f6b7b33ab173301c1c8431b42fd426"
 }
