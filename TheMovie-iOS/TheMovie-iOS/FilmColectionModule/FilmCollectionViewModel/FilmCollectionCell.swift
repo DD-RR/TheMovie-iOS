@@ -36,7 +36,6 @@ final class FilmCollectionCell: UICollectionViewCell {
     
     private func setupView() {
         contentView.addSubview(poster)
-        contentView.addSubview(review)
         NSLayoutConstraint.activate([
             poster.topAnchor.constraint(equalTo: contentView.topAnchor),
             poster.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 4),
@@ -50,6 +49,7 @@ final class FilmCollectionCell: UICollectionViewCell {
     }
     
     private func reviewMovies() {
+        contentView.addSubview(review)
         NSLayoutConstraint.activate([
             review.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 200),
             review.heightAnchor.constraint(equalToConstant: 150),
