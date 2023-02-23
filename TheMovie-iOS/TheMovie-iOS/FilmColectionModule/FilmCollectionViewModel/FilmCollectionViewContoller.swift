@@ -64,7 +64,6 @@ final class FilmCollectionViewController: UIViewController {
    }
    
    @objc private func goToProfile() {
-      print("Profile")
        DispatchQueue.main.async { [weak self] in
            let coordinator: Coordination = MainCoordination(rootViewController: self?.navigationController ?? UINavigationController(), viewControllerFactory: CoordinationFactory())
            coordinator.profile()

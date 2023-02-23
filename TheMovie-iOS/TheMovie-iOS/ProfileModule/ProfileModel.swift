@@ -15,11 +15,13 @@ struct ProfileService: Codable {
 
 struct ProfileResults: Codable {
     let user: String?
-    let name: String
+    let name: String?
+    let username: String?
     
     enum CodingKeys: String, CodingKey {
-        case user = "poster_path"
-        case name = "perfil_path"
+        case user
+        case name = "name"
+        case username = "username"
     }
     
 }
@@ -28,6 +30,7 @@ struct ProfileList {
     static var imageBaseUrl: String = "https://image.tmdb.org/t/p/w300"
     var user: UIImage
     let name: String
+    let username: String
     
     init(from serviceResult: ProfileResults) {
         let imageURLString: String = "\(ProfileList.imageBaseUrl)\(serviceResult.user ?? "")"
@@ -35,6 +38,7 @@ struct ProfileList {
         let posterImage: UIImage = UIImage(url: imageURL) ?? UIImage()
         
         self.user = posterImage
-        self.name = serviceResult.name
+        self.name = serviceResult.name ?? ""
+        self.username = serviceResult.username ?? ""
     }
 }

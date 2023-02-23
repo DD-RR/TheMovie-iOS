@@ -22,9 +22,10 @@ final class ProfileViewModel {
        api.load(.profile) { (result: Result<ProfileResults, Error>) in
           switch result {
              case .success(let profile):
-              guard let profileResults = profile.user_name else { return }
+              print(profile.username)
                 //self.perfilList(with: profileResults)
                 self.state = .success
+              print(profile.user)
              case .failure(let error):
                 let error = error as? APIError
                 switch error {

@@ -33,7 +33,9 @@ class CoordinationFactory: ViewControllerFactory {
     
     func profileViewController() -> UIViewController {
         let profileAPI: ProfileAPI = ProfileAPI(session: .shared)
-        let profileViewController: ProfileViewController = ProfileViewController()
-        return profileViewController
+        let profileViewContoller: ProfileViewController = ProfileViewController()
+        let viewModel: ProfileViewModel = ProfileViewModel(api: profileAPI)
+        profileViewContoller.viewModel = viewModel
+        return profileViewContoller
     }
 }

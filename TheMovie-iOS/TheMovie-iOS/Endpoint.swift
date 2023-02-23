@@ -25,7 +25,7 @@ extension Endpoint {
           case .films:
              return "trending/movie/week?api_key=\(apiKey)"
        case .profile:
-           return "account?api_key=\(apiKey)"
+           return "person/1003?api_key=api_key=\(apiKey)&language=en-US"
        }
     }
     
