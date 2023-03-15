@@ -1,15 +1,14 @@
 # TheMovie-iOS
 
-Aplicacion desarrollada en Swift, por Diego David Rodríguez Reyna (Candidato iOS).
-Dia de inicio: Lunes 20 de Febrero
-Fecha de Terminación: Jueves 23 de Febrero
+Aplicacion desarrollada en Swift, por Diego David Rodríguez Reyna (Desarrollador iOS).
+
 
 ## ARQUITECTURA
 
 Se utilizó el patrón de arquitectura Model-View-ViewModel (MVVM), adecuado y ágil para estructurar y organizar proyectos medianos y pequeños.
 
 
-### Datos de acceso al Examen Técnico:
+### Datos de acceso:
 
 api_key: cc4ecf7605fa497ac9e08b11edab21e2
 
