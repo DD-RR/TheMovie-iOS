@@ -14,7 +14,7 @@ api_key: cc4ecf7605fa497ac9e08b11edab21e2
 
 request_token: 5e682b3867f358539e45323aee44a0492af22dbb
 
-(Para generar un nuevo token de preferencia copie y ejecute esta linea en su explorador favorito https://api.themoviedb.org/3/authentication/token/new?api_key=cc4ecf7605fa497ac9e08b11edab21e2)
+(Para generar un nuevo token de preferencia copie y ejecute esta linea en Google Chrome https://api.themoviedb.org/3/authentication/token/new?api_key=cc4ecf7605fa497ac9e08b11edab21e2)
 
 En caso de necesitar modificar las credenciales, hacerlo en el enum Credentials, dentro del grupo Networking.
 
